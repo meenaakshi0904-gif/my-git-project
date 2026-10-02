@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS EC2 Virtual Machine Project</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        section {
+            background-color: white;
+            margin: 25px auto;
+            padding: 25px;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #232f3e;
+            border-bottom: 2px solid #ff9900;
+            padding-bottom: 8px;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .box {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .steps li {
+            margin: 12px 0;
+        }
+
+        footer {
+            background-color: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>AWS EC2 Virtual Machine Project</h1>
+    <p>Study and Practical Implementation of Launching a Virtual Machine</p>
+</header>
+
+<section>
+    <h2>About the Project</h2>
+
+    <p>
+        This project demonstrates the practical implementation of
+        Amazon Elastic Compute Cloud (AWS EC2). An EC2 virtual machine
+        was created, configured and accessed remotely using SSH.
+    </p>
+
+    <p>
+        The project helps in understanding cloud computing,
+        virtual machines, security groups, key pairs and remote
+        server management.
+    </p>
+</section>
+
+<section>
+    <h2>EC2 Instance Details</h2>
+
+    <div class="info">
+
+        <div class="box">
+            <strong>Instance Name:</strong><br>
+            my-first-EC2
+        </div>
+
+        <div class="box">
+            <strong>Instance Type:</strong><br>
+            t3.micro
+        </div>
+
+        <div class="box">
+            <strong>Operating System:</strong><br>
+            Amazon Linux 2023
+        </div>
+
+        <div class="box">
+            <strong>AWS Region:</strong><br>
+            Mumbai (ap-south-1)
+        </div>
+
+        <div class="box">
+            <strong>Availability Zone:</strong><br>
+            ap-south-1b
+        </div>
+
+        <div class="box">
+            <strong>Key Pair:</strong><br>
+            MY-FIRST-KEY.PEM
+        </div>
+
+        <div class="box">
+            <strong>Security Group:</strong><br>
+            launch-wizard-1
+        </div>
+
+        <div class="box">
+            <strong>SSH Port:</strong><br>
+            22
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Steps to Launch EC2 Instance</h2>
+
+    <ol class="steps">
+        <li>Sign in to the AWS Management Console.</li>
+        <li>Open the Amazon EC2 service.</li>
+        <li>Click on Launch Instance.</li>
+        <li>Select Amazon Linux 2023 as the AMI.</li>
+        <li>Select the t3.micro instance type.</li>
+        <li>Create or select the required key pair.</li>
+        <li>Configure the security group and allow SSH through port 22.</li>
+        <li>Configure the required storage.</li>
+        <li>Review the configuration.</li>
+        <li>Launch the EC2 instance.</li>
+        <li>Verify that the instance is running.</li>
+    </ol>
+</section>
+
+<section>
+    <h2>SSH Connection</h2>
+
+    <p>
+        The EC2 instance was accessed remotely from a Windows computer
+        using SSH. The private key and public DNS of the EC2 instance
+        were used for secure authentication.
+    </p>
+
+    <p>
+        Successful connection to the EC2 instance confirmed that the
+        virtual machine was running correctly.
+    </p>
+</section>
+
+<section>
+    <h2>Basic Linux Commands</h2>
+
+    <ul>
+        <li><strong>whoami</strong> – Checks the current user.</li>
+        <li><strong>pwd</strong> – Displays the current directory.</li>
+        <li><strong>ls</strong> – Lists files and folders.</li>
+        <li><strong>uname -a</strong> – Displays system information.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Advantages of AWS EC2</h2>
+
+    <ul>
+        <li>Scalable computing resources</li>
+        <li>Flexible instance configurations</li>
+        <li>Remote access through the Internet</li>
+        <li>No need to purchase physical servers</li>
+        <li>Suitable for development and testing</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Result</h2>
+
+    <p>
+        An AWS EC2 virtual machine was successfully created and
+        configured using the AWS Management Console. The instance
+        was successfully accessed remotely using SSH.
+    </p>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+
+    <p>
+        This project provided practical knowledge of AWS EC2 and
+        the process of launching and managing a virtual machine
+        in the cloud. It helped in understanding AMI, instance
+        types, key pairs, security groups and SSH access.
+    </p>
+</section>
+
+<footer>
+    <p>AWS EC2 Virtual Machine Project</p>
+    <p>GitHub Pages Deployment</p>
+</footer>
+
+</body>
+</html>
